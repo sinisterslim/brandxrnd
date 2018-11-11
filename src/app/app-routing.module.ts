@@ -22,7 +22,8 @@ const routes: Routes = [
     },
     { 
         path: '**', 
-        component: PageNotFoundComponent 
+        component: PageNotFoundComponent, 
+        data: { title: '404: Page not Found' }
     }
 ];
 
