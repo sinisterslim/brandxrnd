@@ -24,7 +24,7 @@
     "@angular/service-worker": "~7.2.15",
     "@ng-bootstrap/ng-bootstrap": "^2.0.0-alpha.0",
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.2",
     "zone.js": "~0.8.29"
