@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    alert("By clicking you are acknowledging you are 18 an up.")
   }
 
 }

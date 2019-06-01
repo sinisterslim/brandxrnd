@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +11,7 @@ export class LoginComponent implements OnInit {
     password: string = '';
 
     constructor(
-        private http: Http
+        private http: HttpClient
     ) { }
 
     ngOnInit() {
@@ -21,9 +20,9 @@ export class LoginComponent implements OnInit {
     login(form) {
         console.log(form);
 
-        this.http.get('./includes/login.php').subscribe(data => {
-            console.log(data);
-        });
+        // this.http.get('./includes/login.php').subscribe(data => {
+        //     console.log(data);
+        // });
     }
 
 }
