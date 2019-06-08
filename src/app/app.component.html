@@ -4,6 +4,8 @@
         <h2 class="name">Brand X RnD</h2>
         <span class="slogan d-none d-lg-block">Bringing darker days to a brighter future...</span>
     </div>
+
+    <button class="float-right" (click)="showHoverMenu()">???</button>
 </header>
 
 <main class="container-fluid">
@@ -20,3 +22,7 @@
 <footer>
     <i class="far fa-copyright"></i> Brand X Research and Development 2018 - All rights reserved
 </footer>
+
+<div [className]="showHover ? 'hover-menu show' : 'hover-menu'">
+    ???
+</div>

@@ -10,7 +10,8 @@ import { filter, map, switchMap } from 'rxjs/operators';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    showNav: boolean = true;
+    showNav: boolean = false;
+    showHover: boolean = false;
 
     constructor(
         private router: Router,
@@ -42,5 +43,9 @@ export class AppComponent implements OnInit {
     // Function that toggles the visibility of the left-hand navigation
     toggleNav() {
         this.showNav = !this.showNav;
+    }
+
+    showHoverMenu() {
+        this.showHover = !this.showHover;
     }
 }
